@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KHO SẢN PHẨM</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" type="imgage/jpg" href="imgage/logo.jpg"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <div class="container-web">
+        <header>
+            <a href="khosanpham.html"><img src="imgage/header_dienthoai.png" width="1307px"/></a>
+            <div id="menu">
+                <ul>
+                    <a href="index.html"><img id="logo" src="imgage/tencuahang.jpg"/></a>
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="bandienthoai.html">Thu hàng cũ</a></li>
+                    <li>
+                        <form class="hello" style="display: inline-flex;">
+                            <input class="timkiem_1" name="search" type="text" placeholder="Bạn muốn tìm..." style="margin-bottom: 0px; width: 270px;">
+                            <button type="submit" class="search">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </form>
+                    </li>
+                    <li style="margin-left: 100px;"><a href="khosanpham.html">Sản phẩm</a></li>
+                    <li><a href="gioithieu.html">Giới thiệu</a></li>
+                    <li ><a id="login-form" href="#">Đăng nhập</a></li>
+                    <div class="login-form">
+                        <div class="login-form-content">
+                            <h2 align="center">Đăng nhập thông tin <span id="close-login">X Đóng</span></h2>
+                            <form>
+                                <h1 align="center" style="padding: 30px;">Đăng nhập</h1>
+                                <label>Tên đăng nhập:</label>
+                                <input class="input_login" type="text" id="username" name="username" required>
+                                <label>Mật khẩu:</label>
+                                <div class="password">
+                                    <input class="input_login" type="password" id="password" name="password" autocomplete="off" required>
+                                    <i class="fa-regular fa-eye" onclick="changeTypePassword()"></i>
+                                    <i class="fa-regular fa-eye-slash" onclick="changeTypePassword()"></i>
+                                </div>
+                                
+                                <button type="submit" class="login">Đăng nhập</button>
+                                <p>Bạn chưa có tài khoản? <a href="#" id="register-form">Đăng ký tại đây</a></p>
+                            </form>
+                        </div>
+                    </div>
+                
+                    <div class="register-form">
+                        <div class="register-form-content">
+                            <h2 align="center">Đăng ký thông tin <span id="close-register">X Đóng</span></h2>
+                            <form>
+                                <h1 align="center" style="padding: 30px;">Đăng ký</h1>
+                                <label>Tên đăng nhập:</label>
+                                <input class="input_login" type="text" id="username" name="username" required>
+                                <label>Mật khẩu:</label>
+                                <div class="password">
+                                    <input class="input_login" type="password" id="password1" name="password" autocomplete="off" required>
+                                    <i class="fa-regular fa-eye" onclick="changeTypePassword2()"></i>
+                                    <i class="fa-regular fa-eye-slash" onclick="changeTypePassword2()"></i>
+                                </div>
+                                
+                                <label>Xác nhận mật khẩu: </label>
+                                <div class="confirm-password">
+                                    <input class="input_login" type="password" id="password2" name="confirm-password" autocomplete="off">
+                                    <i class="fa-regular fa-eye" onclick="changeTypePassword3()"></i>
+                                    <i class="fa-regular fa-eye-slash" onclick="changeTypePassword3()"></i>
+                                </div>
+                                <button type="submit" class="login">Đăng ký</button>
+                                <p>Bạn đã có tài khoản? <a href="#" id="login-form2">Đăng nhập tại đây</a></p>
+                            </form>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </header>
+        
+        <div class="main2">
+            <h1>KHO SẢN PHẨM</h1>
+            <h2>IPHONE</h2>
+            <div class="container">
+                <div class="item">
+                    <a href="iphone11ProMax.html"><img class="hinh_dienthoai" src="imgage/iphone13-12-11ProMax/iphone-11.webp"/></a>
+                    <h4>Iphone 11 Pro Max</h4>
+                    <p>
+                        <span>20.490.000 ₫</span>
+                        <s>22.990.000 ₫</s>
+                        <br>
+                        <img src="imgage/star-vang.png">
+                        <img src="imgage/star-vang.png">
+                        <img src="imgage/star-vang.png">
+                        <img src="imgage/star-vang.png">
+                        <img src="imgage/star-trang.png">
+                        <span style="color: rgb(127, 123, 123);">7 đánh giá</span>
+                    </p>
+                    <a href="iphone11ProMax.html"><button type="button" class="button_dienthoai1">Mua hàng</button></a>
+                    <a href="iphone11ProMax.html"><button type="button" class="button_dienthoai">Sản phẩm</button></a>
+                </div>
+                <div class="item">
+                    <a href="iphone12ProMax.html"><img class="hinh_dienthoai" src="imgage/iphone13-12-11ProMax/iphone-12.jpg"/></a>
+                    <h4>Iphone 12 Pro Max</h4>
+                    <p>
+                        <span>24.990.000 ₫</span>
+                        <s>28.990.000 ₫</s>
+                        <br>
+                        <img src="imgage/star-vang.png">
+                        <img src="imgage/star-vang.png">
+                        <img src="imgage/star-vang.png">
+                        <img src="imgage/star-vang.png">
+                        <img src="imgage/star-trang.png">
+                    </p>
+                    <a href="iphone12ProMax.html"><button type="button" class="button_dienthoai1">Mua hàng</button></a>
+                    <a href="iphone12ProMax.html"><button type="button" class="button_dienthoai">Sản phẩm</button></a>
+                </div>
+                <div class="item">
+                    <a href="iphone13ProMax.html"><img class="hinh_dienthoai" src="imgage/iphone/iphone_13.jpg"/></a>
+                    <h4>Iphone 13 Pro Max</h4>
+                    <p>
+                        <span>33.490.000 ₫</span>
+                        <s>35.990.000 ₫</s>
+                        <br>
+                        <img src="imgage/star-vang.png">
+                        <img src="imgage/star-vang.png">
+                        <img src="imgage/star-vang.png">
+                        <img src="imgage/star-vang.png">
+                        <img src="imgage/star-trang.png">
+                    </p>
+                    <a href="iphone13ProMax.html"><button type="button" class="button_dienthoai1">Mua hàng</button></a>
+                    <a href="iphone13ProMax.html"><button type="button" class="button_dienthoai">Sản phẩm</button></a>
+                </div>
+                <div class="item">
+                    <a href="iphone14ProMax.html"><img class="hinh_dienthoai" src="imgage/iphone/iphone_14promax.png"/></a>
+                    <h4>Iphone 14 Pro Max</h4>
+                    <p>
+                        <span>37.490.000 ₫</span>
+                        <s>39.990.000 ₫</s>
+                        <br>
+                        <img src="imgage/star-vang.png">
+                        <img src="imgage/star-vang.png">
+                        <img src="imgage/star-trang.png">
+                        <img src="imgage/star-trang.png">
+                        <img src="imgage/star-trang.png">
+                    </p>
+                    <a href="iphone14ProMax.html" ><button type="button" class="button_dienthoai1">Mua hàng</button></a>
+                    <a href="iphone14ProMax.html" ><button type="button" class="button_dienthoai">Sản phẩm</button></a>
+                </div>
+            </div>
+            <div class="container">
+                <div class="item">
+                    <a href="iphone11.html"><img class="hinh_dienthoai" src="imgage/iphone11/iphone11a.jpg"/></a>
+                    <h4>Iphone 11</h4>
+                    <p>
+                        <span>10.950.000 ₫</span>
+                        <s>14.990.00 ₫</s>
+                        <br>
+                        <img src="imgage/star-vang.png">
+                        <img src="imgage/star-vang.png">
+                        <img src="imgage/star-vang.png">
+                        <img src="imgage/star-vang.png">
+                        <img src="imgage/star-vang.png">
+                    </p>
+                    <a href="iphone11.html"><button type="button" class="button_dienthoai1">Mua hàng</button></a>
+                    <a href="iphone11.html"><button type="button" class="button_dienthoai">Sản phẩm</button></a>
+                </div>
+                <div class="item">
+                    <a href="iphone12.html"><img class="hinh_dienthoai" src="imgage/iphone12/iphone-12b.webp"/></a>
+                    <h4>Iphone 12</h4>
+                    <p>
+                        <span>17.490.000 ₫</span>
+                        <s>23.990.000 ₫</s>
+                        <br>
+                        <img src="imgage/star-vang.png">
+                        <img src="imgage/star-vang.png">
+                        <img src="imgage/star-vang.png">
+                        <img src="imgage/star-vang.png">
+                        <img src="imgage/star-vang.png">
+                    </p>
+                    <a href="iphone12.html"><button type="button" class="button_dienthoai1">Mua hàng</button></a>
+                    <a href="iphone12.html"><button type="button" class="button_dienthoai">Sản phẩm</button></a>
+                </div>
+                <div class="item">
+                    <a href="iphone13.html"><img class="hinh_dienthoai" src="imgage/iphone13/iphone-13b.jpg"/></a>
+                    <h4>Iphone 13</h4>
+                    <p>
+                        <span>23.490.000 ₫</span>
+                        <s>26.990.000 ₫</s>
+                        <br>
+                        <img src="imgage/star-vang.png">
+                        <img src="imgage/star-vang.png">
+                        <img src="imgage/star-vang.png">
+                        <img src="imgage/star-vang.png">
+                        <img src="imgage/star-vang.png">
+                    </p>
+                    <a href="iphone13.html"><button type="button" class="button_dienthoai1">Mua hàng</button></a>
+                    <a href="iphone13.html"><button type="button" class="button_dienthoai">Sản phẩm</button></a>
+                </div>
+                <div class="item">
+                    <a href="iphone14.html"><img class="hinh_dienthoai" src="imgage/iphone13/iphone-13f.jpg"/></a>
+                    <h4>Iphone 14</h4>
+                    <p>
+                        <span>28.050.000 ₫</span>
+                        <s>34.990.000 ₫</s>
+                        <br>
+                        <img src="imgage/star-vang.png">
+                        <img src="imgage/star-vang.png">
+                        <img src="imgage/star-vang.png">
+                        <img src="imgage/star-vang.png">
+                        <img src="imgage/star-vang.png">
+                    </p>
+                    <a href="iphone14.html"><button type="button" class="button_dienthoai1">Mua hàng</button></a>
+                    <a href="iphone14.html"><button type="button" class="button_dienthoai">Sản phẩm</button></a>
+                </div>
+            </div>
+            <!--=============================================================================================================================================-->
+            <!--=============================================================================================================================================-->
+            <!--=============================================================================================================================================-->
+            <h2>SAMSUNG</h2>
+            <div class="container">
+                <div class="item">
+                    <a href="samsunga03s.html"><img class="hinh_dienthoai" src="imgage/samsung/a03s.jpg"/></a>
+                    <h4>SamSung Galaxy A03S</h4>
+                    <p>
+                        <span>2.490.000 ₫</span>
+                        <s>3.990.000 ₫</s>
+                        <br>
+                        <img src="imgage/star-vang.png">
+                        <img src="imgage/star-vang.png">
+                        <img src="imgage/star-vang.png">
+                        <img src="imgage/star-vang.png">
+                        <img src="imgage/star-trang.png">
+                    </p>
+                    <a href="samsunga03s.html"><button type="button" class="button_dienthoai1">Mua hàng</button></a>
+                    <a href="samsunga03s.html"><button type="button" class="button_dienthoai">Sản phẩm</button></a>
+                </div>
+                <div class="item">
+                    <a href="samsunga12.html"><img class="hinh_dienthoai" src="imgage/samsung/a12.jpg"/></a>
+                    <h4>SamSung Galaxy A12</h4>
+                    <p>
+                        <span>4.000.000 ₫</span>
+                        <s>4.690.000 ₫</s>
+                        <br>
+                        <img src="imgage/star-vang.png">
+                        <img src="imgage/star-vang.png">
+                        <img src="imgage/star-vang.png">
+                        <img src="imgage/star-vang.png">
+                        <img src="imgage/star-trang.png">
+                    </p>
+                    <a href="samsunga12.html"><button type="button" class="button_dienthoai1">Mua hàng</button></a>
+                    <a href="samsunga12.html"><button type="button" class="button_dienthoai">Sản phẩm</button></a>
+                </div>
+                <div class="item">
+                    <a href="samsunga72.html"><img class="hinh_dienthoai" src="imgage/samsung/a72.jpg"/></a>
+                    <h4>SamSung Galaxy A72</h4>
+                    <p>
+                        <span>4.990.000 ₫</span>
+                        <s>5.990.000 ₫</s>
+                        <br>
+                        <img src="imgage/star-vang.png">
+                        <img src="imgage/star-vang.png">
+                        <img src="imgage/star-vang.png">
+                        <img src="imgage/star-vang.png">
+                        <img src="imgage/star-trang.png">
+                    </p>
+                    <a href="samsunga72.html"><button type="button" class="button_dienthoai1">Mua hàng</button></a>
+                    <a href="samsunga72.html"><button type="button" class="button_dienthoai">Sản phẩm</button></a>
+                </div>
+                <div class="item">
+                    <a href="samsung20fe.html"><img class="hinh_dienthoai" src="imgage/samsung/20fe.jpg"/></a>
+                    <h4>SamSung Galaxy 20 FE</h4>
+                    <p>
+                        <span>13.490.000 ₫</span>
+                        <s>16.990.000 ₫</s>
+                        <br>
+                        <img src="imgage/star-vang.png">
+                        <img src="imgage/star-vang.png">
+                        <img src="imgage/star-vang.png">
+                        <img src="imgage/star-vang.png">
+                        <img src="imgage/star-vang.png">
+                    </p>
+                    <a href="samsung20fe.html"><button type="button" class="button_dienthoai1">Mua hàng</button></a>
+                    <a href="samsung20fe.html"><button type="button" class="button_dienthoai">Sản phẩm</button></a>
+                </div>
+            </div>
+                <div class="container">
+                <div class="item">
+                    <a href="samsungs22.html"><img class="hinh_dienthoai" src="imgage/samsung/s22.png"/></a>
+                    <h4>SamSung Galaxy S22</h4>
+                    <p>
+                        <span>8.490.000 ₫</span>
+                        <s>10.990.000 ₫</s>
+                        <br>
+                        <img src="imgage/star-vang.png">
+                        <img src="imgage/star-vang.png">
+                        <img src="imgage/star-vang.png">
+                        <img src="imgage/star-vang.png">
+                        <img src="imgage/star-vang.png">
+                    </p>
+                    <a href="samsungs22.html"><button type="button" class="button_dienthoai1">Mua hàng</button></a>
+                    <a href="samsungs22.html"><button type="button" class="button_dienthoai">Sản phẩm</button></a>
+                </div>
+                <div class="item">
+                    <a href="samsung23plus.html"><img class="hinh_dienthoai" src="imgage/samsung/s23plus.png"/></a>
+                    <h4>SamSung Galaxy S23 Plus</h4>
+                    <p>
+                        <span>15.490.000 ₫</span>
+                        <s>19.990.000 ₫</s>
+                        <br>
+                        <img src="imgage/star-vang.png">
+                        <img src="imgage/star-vang.png">
+                        <img src="imgage/star-vang.png">
+                        <img src="imgage/star-vang.png">
+                        <img src="imgage/star-vang.png">
+                    </p>
+                    <a href="samsung23plus.html"><button type="button" class="button_dienthoai1">Mua hàng</button></a>
+                    <a href="samsung23plus.html"><button type="button" class="button_dienthoai">Sản phẩm</button></a>
+                </div>
+                <div class="item">
+                    <a href="samsungnote20.html"><img class="hinh_dienthoai" src="imgage/samsung/ssnot20.jpg"/></a>
+                    <h4>SamSung Galaxy Note 20</h4>
+                    <p>
+                        <span>19.490.000 ₫</span>
+                        <s>23.990.000 ₫</s>
+                        <br>
+                        <img src="imgage/star-vang.png">
+                        <img src="imgage/star-vang.png">
+                        <img src="imgage/star-vang.png">
+                        <img src="imgage/star-vang.png">
+                        <img src="imgage/star-vang.png">
+                    </p>
+                    <a href="samsungnote20.html"><button type="button" class="button_dienthoai1">Mua hàng</button></a>
+                    <a href="samsungnote20.html"><button type="button" class="button_dienthoai">Sản phẩm</button></a>
+                </div>
+                <div class="item">
+                    <a href="samsungzfold3.html"><img class="hinh_dienthoai" src="imgage/samsung/zfold3.jpg"/></a>
+                    <h4>SamSung Galaxy Z Fold 3</h4>
+                    <p>
+                        <span>18.490.000 ₫</span>
+                        <s>21.990.000 ₫</s>
+                        <br>
+                        <img src="imgage/star-vang.png">
+                        <img src="imgage/star-vang.png">
+                        <img src="imgage/star-vang.png">
+                        <img src="imgage/star-vang.png">
+                        <img src="imgage/star-vang.png">
+                    </p>
+                    <a href="samsungzfold3.html"><button type="button" class="button_dienthoai1">Mua hàng</button></a>
+                    <a href="samsungzfold3.html"><button type="button" class="button_dienthoai">Sản phẩm</button></a>
+                </div>
+            </div>
+        </div>
+        
+        <div style="background:#f1f2f6; margin-top: 50px; width: 1330px;">
+            <center>
+                <h3>HÀI HƯỚC STORE</h3>
+                <p> <b>Địa chỉ:</b> 140 Lê Trọng Tấn, Tây Thạnh, Tân Phú, Thành phố Hồ Chí Minh</p>
+                <p> <b>Số ĐT:</b> 0388533247 - 0963114775</p>
+                <p><b>Mail:</b> vonhuthao11235@gmail.com - vuongtran975@gmail.com</p>
+                <p><b>Mã số doanh nghiệp:</b> 2001215754 - 2001216327 do Sở Kế hoạch & Đầu Tư TP.HCM
+                Đầu ngày 16/3/2023 @2023 – Bản quyền thuộc về Công Ty Cổ Phần TNHH <b>ĐTHH</b></p>
+            </center>
+        </div>
+    </div>
+	<script type="text/javascript" src="js/jsTrangChu.js"></script>
+</body>
+</html>

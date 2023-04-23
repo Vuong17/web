@@ -1,0 +1,640 @@
+body{
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.container ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	color: red;
+}
+
+header {
+	background-color: #FFF200;
+	text-align: center;
+	height: 44px;
+}
+
+.head-1{
+	background-color: #f1f2f6;
+}
+
+
+.container {
+	max-width: 1200px;
+	margin: auto;
+	background-color: #f1f2f6;
+
+}
+
+nav ul {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav ul li, a {
+	color: black;
+	font-size: 17px;
+}
+
+#logo {
+	width: 100px;
+    height: 50px;
+    list-style-type: none;
+	cursor: pointer;
+}
+
+h5 {
+	margin-left: 75px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	font-size: 20px;
+}
+
+h3 {
+	font-size: 30px;
+}
+
+.timkiem_1 {
+	width: 300px;
+	height: 40px;
+	border: 0.3px solid #a4a4a4;
+	border-radius: 10px;
+}
+
+i{
+	position: relative;
+	right: 25px;
+	line-height: 30px;
+	cursor: pointer;
+}
+
+.slideshow-container {
+	max-width: 400px;
+	position: relative;
+	margin: auto;
+	float: left;
+	margin-left: 20px;
+}
+
+.gia{
+	float: right;
+	margin-right: 100px;
+	width: 500px;
+}
+
+.mySlides {
+	display: none;
+}
+
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: darkslategrey;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+}
+
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+	background-color: rgba(141,141,141,0.80);
+	border-radius: 120px;
+}
+
+/* contain main*/
+.wrapper {
+	display: flex;  /* kich hoat flex box */
+	flex-flow: row wrap;
+}
+
+.contain {
+	text-align: left;
+	background: #FFFFFF;
+	height: 100%;
+	max-width: 1200px;
+	flex: 3 0px; /* cho phần nội dung main ở giữa chiếm 3 phần không gian trống so với 2 phần aside bên cạnh */
+	order: 2;
+}
+
+footer {
+	background: #f1f2f6;
+ 	margin-top: 30px;
+	width: 100%;
+}
+
+.aside { 
+	flex: 0.4 0 0; 
+} /* 2 phần aside sẽ chỉ chiếm 1 phần không gian */
+
+.aside1 {
+	height: 2100px;
+	order: 1;
+}
+
+.aside2 {
+	height: 2100px;
+	order: 3;
+}
+
+.infomation {
+	width: 30%;
+	float: right;
+	flex: 0 0 auto;
+	margin-right: 10px;
+	margin-top: 100px;
+}
+
+.col1 {
+	width: 17%;
+	height: 100px;
+}
+
+.row {
+	height: 50px;	
+}
+
+.btn {
+	width: 110px;
+	height: 60px;
+	border-radius: 10px;
+	font-size: 20px;
+	border: #B5B5B5;
+}
+
+.btn:focus {
+	border: 4px solid #9F9F9F;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.btn-color {
+	width: 100px;
+	height: 40px;
+	border-radius: 10px;
+	font-size: 15px;
+	border: #B5B5B5;
+	margin-top: 10px;
+}
+
+.btn-color:focus {
+	border: 4px solid #9F9F9F;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.gioithieu {
+	width: 65%;
+	float: left;
+	margin-top: 100px;
+	margin-left: 10px;
+}
+
+p {
+	margin-top: 7px;
+	margin-bottom: 7px;
+}
+
+.km {
+	margin-top: 15px; 
+	font-size: 30px; 
+	border: 1px solid grey; 
+	width: 450px;
+	border-radius: 10px;
+}
+
+.km-0 {
+	background-color: #d4d4d4; 
+	font-size: 25px; 
+	border-radius:10px 10px  0 0;
+	text-align: center;
+	padding: 10px;
+}
+
+.km-1{
+	font-size: 15px; margin-left: 30px;
+}
+
+.km-1{
+	padding: 5px;
+}
+
+.km-1 ul li {
+	padding: 5px;
+}
+
+button.mua{
+	height: 50px;
+	width: 200px;
+	border: none;
+	border-radius: 10px;
+	font-size: 20px;
+	background-color: #FF6B6E;
+	color: white;
+}
+
+button.mua:hover{
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* trang log in*/
+
+/* Định dạng form */
+.login-form, .register-form, .buy-form {
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.6);
+	top: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	display: none;
+	z-index: 999;
+}
+.login-form-content, .register-form-content {
+	width: 500px;
+	height: 550px;
+	background-color: #EFEFEF;
+	border-radius: 10px;
+	display: block;
+}
+
+.buy-form-content {
+	width: 600px;
+	height: 650px;
+	background-color: #EFEFEF;
+	border-radius: 10px;
+	display: block;
+}
+
+.login-form-content form, .register-form-content form, .buy-form form {
+	padding: 0 40px;
+}
+
+.login-form-content h2, .register-form-content h2, .buy-form-content h2 {
+	font-size: 14px;
+	padding: 12px 0;
+	border-bottom: 1px solid #a4a4a4;
+	position: relative;
+}
+
+.login-form-content h2 span, .register-form-content h2 span, .buy-form-content h2 span {
+	display: block;
+	position: absolute;
+	height: 30px;
+	padding: 0 6px;
+	border: 1px solid #a4a4a4;
+	right: 12px;
+	cursor: pointer;
+	top: 50%;
+	transform: translateY(-50%);
+	line-height: 30px;
+	color: #333;
+	border-radius: 5px;
+}
+/* Định dạng input và button */
+input[type="text"], input[type="password"], .login {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 20px;
+	border: 0.5px solid #ccc;
+	border-radius: 10px;
+	box-sizing: border-box;
+}
+
+.buy-form form p{
+	margin-top: 10px;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+  
+.login {
+	background-color: #ff7f50;
+	color: #fff;
+	cursor: pointer;
+}
+  
+.login:hover {
+	background-color: #dd6e45;
+}
+
+/* Trang giới thiệu*/
+
+.gioithieu_1 {
+	float: right; 
+	text-align: center; 
+	width: 40%; 
+	margin-right: 30px; 
+	margin-top: 40px;
+}
+
+.qc {
+	margin-top: 50px;
+	margin-bottom: 50px; 
+	font-size: 40px;
+}
+
+.main_qc {
+	text-align: center; 
+	float: left; 
+	margin-left: 30px; 
+	width: 50%; 
+	margin-top: 40px;
+}
+
+.line-bottom {
+	width: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 15px;
+	display: block;
+	content: "";
+	background: #56B665;
+	height: 3px;
+}
+
+.img-gioithieu {
+	width: 180px;
+	height: 100px;
+	margin-top: 20px;
+}
+
+.accress {
+	border: 0.5px solid #ccc;
+	border-radius: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.accress select {
+	padding: 0 40px;
+	margin-top: 20px;
+	margin-left: 10px;
+	width: 47%;
+	height: 30px;
+	border-radius: 10px;
+	border: 0.5px solid #ccc;
+}
+
+button[type="submit"]
+{
+	width: 100%;
+	height: 40px;
+	text-align: center;
+	background-color: #ff7f50;
+	border: none;
+	border-radius: 10px;
+	font-size: 20px;
+}
+
+button[type="submit"]:hover {
+	background-color: #FF6B6E;
+}
+
+input[type="text"] ~ .fa-eye-slash{
+    display: none;
+}
+input[type="password"] ~ .fa-eye{
+    display: none;
+}
+
+.password .fa-regular.fa-eye {
+	position: relative;
+	top: -40px;
+	right: -390px;
+	transform: translateY(-50%);
+	cursor: pointer;
+}
+  
+.password .fa-regular.fa-eye-slash {
+	position: relative;
+	top: -40px;
+	right: -390px;
+	transform: translateY(-50%);
+	cursor: pointer;
+}
+
+.confirm-password .fa-regular.fa-eye {
+	position: relative;
+	top: -40px;
+	right: -390px;
+	transform: translateY(-50%);
+	cursor: pointer;
+}
+  
+.confirm-password .fa-regular.fa-eye-slash {
+	position: relative;
+	top: -40px;
+	right: -390px;
+	transform: translateY(-50%);
+	cursor: pointer;
+}
+
+.category {
+	max-height: 800px;
+	overflow: hidden;
+}
+.category.show-more {
+	max-height: none;
+}
+.category-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.category-toggle {
+	display: block;
+	border: 1px solid grey;
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 100px;
+	padding: 7px;
+}
+
+.category-toggle:hover {
+	color: red;
+	cursor: pointer;
+}
+
+.comment {
+	border: 1px solid grey;
+	border-radius: 10px;
+	padding: 15px;
+}
+
+.comment input {
+	height: 100px;
+}
+
+.comment button {
+	background-color: red;
+	border: none;
+	color: white;
+	width: 90px; 
+	height: 30px; 
+	float: right; 
+	position: relative; 
+	top: -85px; 
+	right: 10px;
+}
+
+.comment button i{
+	color: #ffffff; 
+	position: absolute; 
+	right: 65px;
+}
+
+.comment h4{
+	margin-top: 20px;
+}
+
+.comment h2{
+	margin-bottom: 20px;
+}
+
+#slideshow {
+	position: relative;
+	overflow: hidden;
+	height: 350px;
+	width: 1180px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border: 0.5px solid grey;
+	border-radius: 10px;
+}
+
+.slide-wrapper {
+	position: relative;
+	width: 3300px;
+	-webkit-animation: slide 15s ease infinite;
+	
+}
+
+.slide {
+	position: relative;
+	float: left;
+	margin: 10px;
+}
+.prev1,
+.next1 {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	padding: 15px;
+	border: none;
+	font-weight: bold;
+	font-size: 18px;
+	background-color: rgba(0, 0, 0, 0);
+	color: darkslategrey;
+	cursor: pointer;
+	border-radius: 120px;
+}
+
+.prev1 {
+	left: 5px;
+}
+
+.next1 {
+	right: 5px;
+}
+
+.prev1:hover, .next1:hover {
+	background-color: rgba(141,141,141,0.80);
+	border-radius: 120px;
+	color: red;
+}
+
+@-webkit-keyframes slide {
+	20% {margin-left: 0px;}
+	30% {margin-left: -1180px;}
+	50% {margin-left: -1180px;}
+	60% {margin-left: -2360px;}
+	80% {margin-left: -2360px;}
+}
+
+.item {
+	border: 1px solid #f2ecec;
+	text-align: center;
+	transition: 0.5s;
+	width: 275px;
+	height: 330px;
+	padding: 10px;
+}
+
+.item:hover {
+	box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+}
+
+.item span {
+	color: #ff0000;
+}
+
+.button_dienthoai,
+.button_dienthoai1 {
+	width: 90px;
+	height: 30px;
+	border: 0.1px solid #8A8A8A;
+	border-radius: 7px;
+}
+
+.button_dienthoai1 {
+	background-color: #ff7f50;
+}
+
+.img-ngoisao{
+	width: 15px;
+	height: 15px;
+}
+
+.hinh_dienthoai{
+	width: 200px;
+	height: 200px;
+	transition: 0.5s;
+}
+.hinh_dienthoai:hover{
+	transform: scale(1.1, 1.05);
+}
+
+.qc-left {
+	position: fixed;
+	left: calc(((100vw - 1200px)/2) - 130px);
+}
+
+.qc-left img{
+	width: 110px;
+}
+
+.qc-right {
+	position: fixed;
+	right: calc(((100vw - 1200px)/2) - 130px);
+}
+
+.qc-right img{
+	width: 110px;
+}
